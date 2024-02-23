@@ -1,0 +1,29 @@
+@import '@/styles/colors';
+
+.button {
+  cursor: pointer;
+
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  outline: 2px solid transparent;
+}
+
+.primary {
+  padding: 14px;
+  background-color: $color-dark-900;
+  border-radius: 24px;
+}
+
+.secondary {
+  padding: 20px 32px;
+  border: 1px solid $color-light-100;
+  border-radius: 12px;
+}
+
+.fullWidth {
+  width: 100%;
+}
