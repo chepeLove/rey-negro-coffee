@@ -1,0 +1,31 @@
+@import '@/styles/colors';
+@import '@/styles/typography';
+
+@mixin typography($fontSize, $lineHeight, $fontWeight) {
+  margin: 0;
+
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $color-light-100;
+}
+
+.h1 {
+  @include typography($font-size-h1, $line-height-h1, $font-weight-bold);
+}
+
+.h2 {
+  @include typography($font-size-h2, $line-height-h2, $font-weight-bold);
+}
+
+.h3 {
+  @include typography($font-size-h2, $line-height-h3, $font-weight-bold);
+}
+
+.regular {
+  @include typography($font-size-l, $line-height-l, $font-weight-regular);
+}
+
+.bold {
+  @include typography($font-size-l, $line-height-l, $font-weight-bold);
+}
