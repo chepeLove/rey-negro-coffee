@@ -1,0 +1,34 @@
+@import '@/styles/colors';
+
+.menu {
+  display: flex;
+  gap: 10px;
+
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 28px;
+  list-style: none;
+
+  &-item {
+    color: $color-dark-500;
+
+    :hover {
+      display: inline-block;
+      color: transparent;
+      background: radial-gradient(circle, $color-gold-700, $color-gold-500);
+      background-clip: text;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+  }
+
+  &-linkActive {
+    display: inline-block;
+    color: transparent;
+    background: radial-gradient(circle, $color-gold-700, $color-gold-500);
+    background-clip: text;
+  }
+}
