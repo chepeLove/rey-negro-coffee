@@ -1,10 +1,19 @@
-import { IButton } from '@/components/button'
+import { ElementType } from 'react'
+
+import { IButtonProps } from '@/components/button'
 import { clsx } from 'clsx'
 
 import styles from './Button.module.scss'
 
-export const Button = ({ className, fullWidth, variant = 'primary', ...restProps }: IButton) => {
+export const Button = <T extends ElementType>({
+  as,
+  className,
+  fullWidth,
+  variant = 'primary',
+  ...restProps
+}: IButtonProps<T>) => {
   const classNames = clsx(styles.button, styles[variant], fullWidth && styles.fullWidth, className)
+  const Tag: ElementType = as || 'button'
 
-  return <button className={classNames} {...restProps} />
+  return <Tag className={classNames} {...restProps} />
 }
