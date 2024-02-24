@@ -1,0 +1,26 @@
+@import '@/styles/colors';
+
+.card {
+  max-width: 583px;
+  background-color: $color-dark-700;
+  border-radius: 12px;
+
+  &-wrapper {
+    padding: 26px 38px 38px;
+
+    &-text {
+      justify-content: left;
+    }
+  }
+
+  &-subtitle {
+    display: inline-block;
+    margin: 10px 0;
+    color: $color-dark-500;
+  }
+
+  &-buttons {
+    gap: 28px;
+    margin-top: 40px;
+  }
+}
