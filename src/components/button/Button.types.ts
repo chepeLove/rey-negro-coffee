@@ -1,7 +1,11 @@
-import { ComponentPropsWithoutRef } from 'react'
+import { ComponentPropsWithoutRef, ElementType } from 'react'
 
 type VariantType = 'primary' | 'secondary'
-export interface IButton extends ComponentPropsWithoutRef<'button'> {
+export interface IButtonOwnProps<T extends ElementType> {
+  as?: T
   fullWidth?: boolean
   variant?: VariantType
 }
+
+export type IButtonProps<T extends ElementType = 'button'> = IButtonOwnProps<T> &
+  Omit<ComponentPropsWithoutRef<T>, keyof IButtonOwnProps<T>>
