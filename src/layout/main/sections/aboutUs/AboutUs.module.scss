@@ -1,0 +1,35 @@
+.aboutUs {
+  position: relative;
+  margin: 40px 0;
+
+  &-image {
+    width: 100%;
+  }
+
+  &-container {
+    position: absolute;
+    gap: 36px;
+
+    &-center {
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 100%;
+
+      text-align: center;
+    }
+
+    &-left {
+      top: 100px;
+      right: 40%;
+      align-items: flex-start;
+    }
+
+    &-right {
+      top: 100px;
+      left: 60%;
+      align-items: flex-start;
+    }
+  }
+}
