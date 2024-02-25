@@ -5,7 +5,7 @@ import { ICoffeeCardsProps } from '@/layout/main/sections/сoffeeCards'
 
 import styles from './CoffeCards.module.scss'
 
-export const CoffeeCards = ({ endIndex, startIndex = 0 }: ICoffeeCardsProps) => {
+export const CoffeeCards = ({ endIndex = cardItems.length, startIndex = 0 }: ICoffeeCardsProps) => {
   return (
     <section className={styles.coffeeCards}>
       <Container className={styles['coffeeCards-container']}>
