@@ -26,7 +26,9 @@ export const AboutUs = ({
         <Typography as={'h1'} variant={'h1'}>
           {title}
         </Typography>
-        <Typography as={'span'}>{text}</Typography>
+        <Typography as={'span'} variant={'regularBig'}>
+          {text}
+        </Typography>
         {isShowContactUsButton && (
           <Button as={'a'} variant={'secondary'}>
             СВЯЗАТЬСЯ С НАМИ
