@@ -1,0 +1,14 @@
+@import 'src/styles/colors';
+
+.footer {
+  padding: 80px 0;
+  text-align: center;
+  background-color: $color-dark-900;
+
+  &-name {
+    display: inline-block;
+    color: transparent;
+    background: radial-gradient(circle, rgb(191 136 54), rgb(242 222 138));
+    background-clip: text;
+  }
+}
