@@ -24,7 +24,7 @@ export const Card = ({
         <Typography as={'h3'} variant={'h3'}>
           {title}
         </Typography>
-        <Typography as={'h4'} className={styles['card-subtitle']} variant={'regular'}>
+        <Typography as={'h4'} className={styles['card-subtitle']} variant={'regularSmall'}>
           {subtitle}
         </Typography>
         <div>
