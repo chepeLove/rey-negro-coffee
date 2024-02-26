@@ -1,0 +1,33 @@
+@import '@/styles/colors';
+
+.field {
+  width: 100%;
+  min-width: 490px;
+  padding: 20px 0;
+
+  font-size: 16px;
+  color: $color-light-100;
+  text-align: center;
+
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  outline: 1px solid $color-dark-500;
+
+  &::placeholder {
+    color: rgb(255 255 255 / 25%);
+    text-transform: uppercase;
+  }
+
+  &:active {
+    outline: 1px solid $color-gold-700;
+  }
+
+  &:focus {
+    outline: 1px solid $color-gold-700;
+  }
+
+  &:hover {
+    outline: 1px solid $color-gold-700;
+  }
+}
