@@ -22,8 +22,12 @@
   @include typography($font-size-h2, $line-height-h3, $font-weight-bold);
 }
 
-.regular {
+.regularSmall {
   @include typography($font-size-l, $line-height-l, $font-weight-regular);
+}
+
+.regularBig {
+  @include typography($font-size-x, $line-height-x, $font-weight-regular);
 }
 
 .bold {
