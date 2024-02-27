@@ -15,25 +15,27 @@ export const AboutUs = ({
   title,
 }: IAboutUsProps) => {
   const classNamesContainer = clsx(
-    styles['aboutUs-container'],
-    styles[`aboutUs-container-${containerPosition}`]
+    styles['about-us-container-text'],
+    styles[`about-us-container-text-${containerPosition}`]
   )
 
   return (
-    <section className={styles.aboutUs}>
-      <Image className={styles['aboutUs-image']} url={image} />
-      <Container className={classNamesContainer} direction={'column'}>
-        <Typography as={'h1'} variant={'h1'}>
-          {title}
-        </Typography>
-        <Typography as={'span'} variant={'regularBig'}>
-          {text}
-        </Typography>
-        {isShowContactUsButton && (
-          <Button as={'a'} variant={'secondary'}>
-            СВЯЗАТЬСЯ С НАМИ
-          </Button>
-        )}
+    <section className={styles['about-us']}>
+      <Container className={styles['about-us-container']} direction={'column'}>
+        <Image className={styles['about-us-container-image']} url={image} />
+        <Container className={classNamesContainer} direction={'column'}>
+          <Typography as={'h1'} variant={'h1'}>
+            {title}
+          </Typography>
+          <Typography as={'span'} variant={'regularBig'}>
+            {text}
+          </Typography>
+          {isShowContactUsButton && (
+            <Button as={'a'} variant={'secondary'}>
+              СВЯЗАТЬСЯ С НАМИ
+            </Button>
+          )}
+        </Container>
       </Container>
     </section>
   )
