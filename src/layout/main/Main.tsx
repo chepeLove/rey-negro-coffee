@@ -1,5 +1,4 @@
 import { aboutUsInfo } from '@/constants/aboutUsInfo'
-import { Footer } from '@/layout/footer'
 import { AboutUs } from '@/layout/main/sections/aboutUs'
 import { GetPriceForm } from '@/layout/main/sections/getPriceForm'
 import { Home } from '@/layout/main/sections/home'
@@ -16,7 +15,6 @@ export const Main = () => {
       <CoffeeCards startIndex={6} />
       <AboutUs {...aboutUsInfo[2]} containerPosition={'right'} />
       <GetPriceForm />
-      <Footer />
     </main>
   )
 }
