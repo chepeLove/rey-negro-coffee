@@ -1,4 +1,4 @@
-import home from '@/assets/images/home.png'
+import { home } from '@/assets/images'
 import { Button } from '@/components/button'
 import { Image } from '@/components/image'
 
