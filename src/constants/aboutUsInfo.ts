@@ -1,16 +1,9 @@
-import aboutUsImage1 from '@/assets/images/about-us-1.png'
-import aboutUsImage2 from '@/assets/images/about-us-2.png'
-import aboutUsImage3 from '@/assets/images/about-us-3.png'
-export interface IAboutUsInfo {
-  id: string
-  image: string
-  text: string
-  title: string
-}
+import { aboutUs1, aboutUs2, aboutUs3 } from '@/assets/images'
+import { IAboutUsInfo } from '@/types'
 export const aboutUsInfo: IAboutUsInfo[] = [
   {
     id: '1',
-    image: aboutUsImage1,
+    image: aboutUs1,
     text:
       'На нашем производстве мы используем передовые технологии обжарки зерна,' +
       ' которые обеспечивают полный контроль над ароматом, текстурой и вкусом.' +
@@ -20,7 +13,7 @@ export const aboutUsInfo: IAboutUsInfo[] = [
   },
   {
     id: '2',
-    image: aboutUsImage2,
+    image: aboutUs2,
     text:
       'В центре нашей философии лежит индивидуальность. Мы приглашаем вас в мир гибкого и индивидуального партнерства.' +
       'Наша компания с готовностью предоставляет уникальные условия сотрудничества для предприятий' +
@@ -30,7 +23,7 @@ export const aboutUsInfo: IAboutUsInfo[] = [
   },
   {
     id: '3',
-    image: aboutUsImage3,
+    image: aboutUs3,
     text:
       'Собственное производство и прямые поставки сырья от надежных производителей создают основу ' +
       'для наших преимущественных цен как в розницу, так и оптом. Наша способность контролировать каждый ' +
