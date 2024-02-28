@@ -7,8 +7,8 @@ import styles from './CoffeCards.module.scss'
 
 export const CoffeeCards = ({ endIndex = cardItems.length, startIndex = 0 }: ICoffeeCardsProps) => {
   return (
-    <section className={styles.coffeeCards} id={'ourProduct'}>
-      <Container className={styles['coffeeCards-container']}>
+    <section className={styles.cards} id={'ourProduct'}>
+      <Container className={styles['cards-container']}>
         {cardItems.slice(startIndex, endIndex).map(item => (
           <Card {...item} key={item.id} />
         ))}
