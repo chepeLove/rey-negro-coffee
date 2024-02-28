@@ -1,9 +1,7 @@
-@import '@/styles/variables';
-
 .container {
   display: flex;
   align-items: center;
-  max-width: $block-max-width;
+  max-width: 1140px;
   margin: 0 auto;
 
   &-row {

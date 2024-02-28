@@ -1,6 +1,6 @@
 @import '@/styles/colors';
 
-.getPriceForm {
+.get-price-form {
   padding: 68px 0 76px;
   background-color: $color-dark-700;
 
@@ -33,6 +33,16 @@
     &-text {
       gap: 42px;
       max-width: 400px;
+
+      &-title {
+        font-size: 34px;
+        line-height: 42px;
+      }
+
+      &-content {
+        font-size: 28px;
+        line-height: 29px;
+      }
     }
   }
 
@@ -40,5 +50,30 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+  }
+}
+
+@media (width <= 768px) {
+  .get-price-form {
+    &-content-box {
+      flex-direction: column;
+      gap: 32px;
+      margin-top: 32px;
+
+      &-text {
+        gap: 10px;
+        max-width: 340px;
+
+        &-title {
+          font-size: 17px;
+          line-height: 17px;
+        }
+
+        &-content {
+          font-size: 17px;
+          line-height: 17px;
+        }
+      }
+    }
   }
 }
