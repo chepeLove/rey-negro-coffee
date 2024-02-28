@@ -1,10 +1,9 @@
-.coffeeCards {
+.cards {
   margin: 40px 0;
 
   &-container {
     flex-wrap: wrap;
-    gap: 40px;
-    max-width: 100%;
-    padding: 0 35px;
+    gap: 35px;
+    max-width: 1820px;
   }
 }
