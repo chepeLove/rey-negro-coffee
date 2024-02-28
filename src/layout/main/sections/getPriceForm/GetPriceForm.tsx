@@ -22,27 +22,34 @@ export const GetPriceForm = () => {
   }
 
   return (
-    <section className={styles.getPriceForm} id={'getPrice'}>
-      <Container className={styles['getPriceForm-container']} direction={'column'}>
-        <Image className={styles['getPriceForm-container-image-left']} url={coffeeImageLeft} />
-        <Image className={styles['getPriceForm-container-image-right']} url={coffeeImageRight} />
-        <Typography as={'h1'} className={styles['getPriceForm-title']} variant={'h1'}>
+    <section className={styles['get-price-form']} id={'get-price'}>
+      <Container className={styles['get-price-form-container']} direction={'column'}>
+        <Image className={styles['get-price-form-container-image-left']} url={coffeeImageLeft} />
+        <Image className={styles['get-price-form-container-image-right']} url={coffeeImageRight} />
+        <Typography as={'h1'} className={styles['get-price-form-title']} variant={'h1'}>
           {'ПОЛУЧИ '}
           <Typography as={'span'} variant={'h1'}>
             {'ОПТОВЫЙ ПРАЙС'}
           </Typography>
           {' ПРЯМО СЕЙЧАС!'}
         </Typography>
-        <Container className={styles['getPriceForm-content-box']}>
-          <Container className={styles['getPriceForm-content-box-text']} direction={'column'}>
-            <Typography as={'h2'} variant={'h2'}>
+        <Container className={styles['get-price-form-content-box']}>
+          <Container className={styles['get-price-form-content-box-text']} direction={'column'}>
+            <Typography
+              as={'h2'}
+              className={styles['get-price-form-content-box-text-title']}
+              variant={'h2'}
+            >
               {'ПРЕДЛОЖЕНИЕ ' + ' ДЛЯ КОРПОРАТИВНЫХ' + ' КЛИЕНТОВ'}
             </Typography>
-            <Typography variant={'regularBig'}>
+            <Typography
+              className={styles['get-price-form-content-box-text-content']}
+              variant={'regularBig'}
+            >
               Индивидуальные условия! Для бизнеса, для офисов, ресторанов, кофеен, отелей
             </Typography>
           </Container>
-          <form className={styles['getPriceForm-form']} onSubmit={handleSubmit}>
+          <form className={styles['get-price-form-form']} onSubmit={handleSubmit}>
             <TextField name={'name'} placeholder={'имя'} />
             <TextField name={'email'} placeholder={'e-mail'} type={'email'} />
             <TextField name={'phone'} placeholder={'телефон'} type={'tel'} />
