@@ -24,14 +24,18 @@ export const AboutUs = ({
       <Container className={styles['about-us-container']} direction={'column'}>
         <Image className={styles['about-us-container-image']} url={image} />
         <Container className={classNamesContainer} direction={'column'}>
-          <Typography as={'h1'} variant={'h1'}>
+          <Typography as={'h1'} className={styles['about-us-container-text-title']} variant={'h1'}>
             {title}
           </Typography>
-          <Typography as={'span'} variant={'regularBig'}>
+          <Typography
+            as={'span'}
+            className={styles['about-us-container-text-content']}
+            variant={'regularBig'}
+          >
             {text}
           </Typography>
           {isShowContactUsButton && (
-            <Button as={'a'} variant={'secondary'}>
+            <Button as={'a'} href={'#getPrice'} variant={'secondary'}>
               СВЯЗАТЬСЯ С НАМИ
             </Button>
           )}
