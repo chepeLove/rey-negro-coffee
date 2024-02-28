@@ -60,11 +60,11 @@ export const Card = ({
           </Typography>
         </div>
         <Container className={styles['card-buttons']}>
-          <Button as={'a'} variant={'secondary'}>
+          <Button as={'a'} href={'https://www.ozon.ru/'} variant={'secondary'}>
             КУПИТЬ НА
             <Ozon />
           </Button>
-          <Button as={'a'} variant={'secondary'}>
+          <Button as={'a'} href={'https://www.wildberries.ru/'} variant={'secondary'}>
             КУПИТЬ НА
             <Wildberries />
           </Button>
