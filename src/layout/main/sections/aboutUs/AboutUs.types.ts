@@ -1,4 +1,4 @@
-import { IAboutUsInfo } from '@/constants/aboutUsInfo'
+import { IAboutUsInfo } from '@/types'
 
 type ContainerPositionType = 'center' | 'left' | 'right'
 export interface IAboutUsProps extends IAboutUsInfo {
